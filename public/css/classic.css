@@ -1,0 +1,76 @@
+/**
+ * ******************
+ * DIFFERENT BUBBLES
+ * ******************
+ */
+.wpcb-bubble {
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    clear: both;
+    margin-bottom: 8px;
+    padding: 8px 14px;
+    vertical-align: top;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.wpcb-bubble:before {
+    position: absolute;
+    top: 19px;
+    display: block;
+    width: 8px;
+    height: 6px;
+    content: '\00a0';
+    -moz-transform: rotate(29deg) skew(-35deg);
+    -ms-transform: rotate(29deg) skew(-35deg);
+    -webkit-transform: rotate(29deg) skew(-35deg);
+    transform: rotate(29deg) skew(-35deg);
+}
+
+.wpcb-bubble.bot {
+    float: left;
+    color: #1a1a1a;
+    background-color: #eceff1;
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+}
+
+.wpcb-bubble.bot:before {
+    left: -3px;
+    background-color: #eceff1;
+}
+
+.wpcb-bubble.human {
+    float: right;
+    color: #fff;
+    background-color: #00b0ff;
+    align-self: flex-end;
+}
+
+.wpcb-bubble.human:before {
+    right: -3px;
+    background-color: #00b0ff;
+}
+
+.wpcb-bubble.bot a {
+  padding:1px 5px;
+  background:#008bcb;
+  color:white;
+}
+
+/**
+ * ******************
+ * DIFFERENT BUTTONS
+ * ******************
+ */
+
+.btn-answer button {
+    font-size: 14px;
+    color: #00b0ff;
+    background: white;
+    border: 1px solid #00b0ff;
+    border-radius: 5px;
+    padding: 5px 14px;
+}
